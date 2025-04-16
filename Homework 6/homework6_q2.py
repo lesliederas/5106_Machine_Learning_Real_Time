@@ -1,3 +1,12 @@
+#You will fine-tune pretrained Swin Transformer models from the Hugging Face Transformers library—specifically the Tiny 
+#(microsoft/swin-tiny-patch4-window7-224) and Small (microsoft/swin-small-patch4-window7-224) variants - on CIFAR-100 and 
+#compare their performance to a Swin Transformer trained from scratch. Start by loading these pretrained models using 
+#SwinForImageClassification.from_pretrained(), adjusting the classification head for 100 classes and f
+#reezing the backbone to train only the head. Fine-tune both models for  2-5epochs with a batch size of 32, a learning rate of 2e-5, 
+#the Adam optimizer. Measure training time per epoch and final test accuracy for each. In your report, 
+#present a table with these results and discuss the benefits and drawbacks of fine-tuning versus training from scratch, 
+#the differences between Swin-Tiny and Swin-Small in this context, and reasons why pretrained models might outperform or 
+#underperform the scratch model.
 # -*- coding: utf-8 -*-
 """Homework6_Q2.ipynb
 
