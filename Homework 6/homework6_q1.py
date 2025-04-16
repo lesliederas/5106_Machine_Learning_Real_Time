@@ -1,3 +1,21 @@
+#Your goal is to design a Vision Transformer architecture from scratch tailored for CIFAR-100,
+#which consists of 100 classes and 32x32 RGB images, and then analyze how different configurations 
+#impact computational complexity and performance compared to a ResNet-18 baseline. 
+#Begin by creating a ViT with patch embedding, transformer encoder blocks, and a classification head, 
+#experimenting with configurations such as patch sizes of 4x4 and 8x8, embedding dimensions of 256 and 512, 
+#transformer layers of 4 and 8, attention heads of 2 and 4, and an MLP hidden dimension set to two or four times the embedding dimension 
+#(e.g., 256 for an embedding dimension of 128, of other os 2X). Write a complete PyTorch script to train your ViT on CIFAR-100, 
+#incorporating data loading with torchvision.datasets. CIFAR100 and standard training hyperparameters like a batch size of 64, 
+#20-50 epochs, and an Adam optimizer with a learning rate of 0.001. Next, 
+#analyze the computational complexity by calculating the theoretical number of parameters for each configuration, 
+#estimating FLOPs per forward pass using a tool like torchinfo or manual computation, and measuring training time. 
+#For comparison, implement or use a pretrained ResNet-18 from torchvision.models, train it on CIFAR-100 with the same hyperparameters, 
+#and evaluate test accuracy after 10 epochs, number of parameters, FLOPs, and training time per epoch against your ViT configurations. 
+#In your report, include a table summarizing results for at least four ViT configurations and ResNet-18, 
+#and discuss the trade-offs between accuracy, model size, and computational complexity, 
+#explaining why certain configurations might outperform or underperform ResNet-18.
+
+
 # -*- coding: utf-8 -*-
 """Homework6_Q1.ipynb
 
